@@ -1,0 +1,9 @@
+html {
+   font-family: Poppins;
+}
+
+.add-background {
+  background-image: url('https://cdn.pixabay.com/photo/2024/04/04/06/46/ai-generated-8674485_1280.png');
+  background-size: cover;
+  background-position: center;
+}
