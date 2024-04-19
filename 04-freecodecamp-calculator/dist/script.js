@@ -11,8 +11,8 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
   render() {
     return /*#__PURE__*/(
       React.createElement("button", { id: this.props.buttonId, onClick: this.onClick,
-        className: `${this.props.addClasses} bg-white font-bold py-2 px-4 rounded-md border border-gray-200 flex justify-center items-center hover:bg-gray-200` }, /*#__PURE__*/
-      React.createElement("p", { className: "text-gray-600" }, this.props.text)));
+        className: `py-2 px-4 rounded-md flex justify-center items-center hover:bg-[#7baaff] text-[#7b90fd] hover:text-white shadow-[0.25rem_0.25rem_0.875rem_0_rgb(225,226,228),-0.25rem_-0.25rem_0.875rem_0_rgb(255,255,255)] ${this.props.addClasses}` }, /*#__PURE__*/
+      React.createElement("p", null, this.props.text)));
 
 
   }}
@@ -74,10 +74,11 @@ class App extends React.Component {
 
   render() {
     return /*#__PURE__*/(
-      React.createElement("div", { className: "min-h-screen flex justify-center items-center flex-col" }, /*#__PURE__*/
-      React.createElement("div", { id: "calculator", className: "grid grid-cols-4 gap-2 bg-gray-100 p-4 rounded-lg" }, /*#__PURE__*/
-      React.createElement("p", { id: "display", className: "col-span-4 flex justify-center items-center bg-gray-200 h-6 w-full mb-2 rounded-md font-bold text-gray-600" }, this.state.displayValue), /*#__PURE__*/
-      React.createElement(CalcButton, { onClick: this.update, buttonId: "clear", text: "C", addClasses: "col-span-2" }), /*#__PURE__*/
+      React.createElement("div", { className: "min-h-screen flex justify-center items-center flex-col bg-[#f2f3f9]" }, /*#__PURE__*/
+      React.createElement("h1", { className: "mb-16 font-extrabold text-3xl text-center" }, "Neumorphic Calculator", /*#__PURE__*/React.createElement("br", null), "with ", /*#__PURE__*/React.createElement("span", { className: "text-[#7b90fd]" }, "TailwindCSS")), /*#__PURE__*/
+      React.createElement("div", { id: "calculator", className: "grid grid-cols-4 gap-2 p-4 rounded-lg shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)]" }, /*#__PURE__*/
+      React.createElement("p", { id: "display", className: "col-span-4 flex justify-center items-center h-8 w-full mb-2 rounded-md bg-[#e6e9f3] shadow-[inset_0rem_0.2rem_0.4rem_0_rgb(0,0,0,0.1)]" }, this.state.displayValue), /*#__PURE__*/
+      React.createElement(CalcButton, { onClick: this.update, buttonId: "clear", text: "C", addClasses: "col-span-2 bg-[#7b90fd] text-white" }), /*#__PURE__*/
       React.createElement(CalcButton, { onClick: this.update, buttonId: "divide", text: "/" }), /*#__PURE__*/
       React.createElement(CalcButton, { onClick: this.update, buttonId: "multiply", text: "*" }), /*#__PURE__*/
 
@@ -94,7 +95,7 @@ class App extends React.Component {
       React.createElement(CalcButton, { onClick: this.update, buttonId: "one", text: "1" }), /*#__PURE__*/
       React.createElement(CalcButton, { onClick: this.update, buttonId: "two", text: "2" }), /*#__PURE__*/
       React.createElement(CalcButton, { onClick: this.update, buttonId: "three", text: "3" }), /*#__PURE__*/
-      React.createElement(CalcButton, { onClick: this.update, buttonId: "equals", text: "=", addClasses: "row-span-2" }), /*#__PURE__*/
+      React.createElement(CalcButton, { onClick: this.update, buttonId: "equals", text: "=", addClasses: "row-span-2 bg-[#7b90fd] text-white" }), /*#__PURE__*/
 
       React.createElement(CalcButton, { onClick: this.update, buttonId: "zero", text: "0", addClasses: "col-span-2" }), /*#__PURE__*/
       React.createElement(CalcButton, { onClick: this.update, buttonId: "decimal", text: "." }))));
