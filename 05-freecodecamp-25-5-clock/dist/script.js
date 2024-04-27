@@ -106,27 +106,65 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
   render() {
     return /*#__PURE__*/(
-      React.createElement("div", { className: "min-h-screen flex justify-center items-center flex-col" }, /*#__PURE__*/
-      React.createElement("div", { className: "gap-2 bg-gray-100 p-4 rounded-lg flex justify-center items-center flex-col" }, /*#__PURE__*/
-      React.createElement("h1", { className: "text-lg font-bold" }, "Session Timer"), /*#__PURE__*/
-      React.createElement("h2", { id: "break-label" }, "Break Length"), /*#__PURE__*/
-      React.createElement("p", { id: "break-length", className: "flex justify-center items-center bg-gray-200 h-6 w-full mb-2 rounded-md" }, this.state.breakLength), /*#__PURE__*/
-      React.createElement("div", { className: "flex" }, /*#__PURE__*/
-      React.createElement("button", { id: "break-decrement", onClick: this.breakDecrement, className: "bg-white font-bold w-8 h-8 rounded-md border border-gray-200 flex justify-center items-center hover:bg-gray-200" }, "-"), /*#__PURE__*/
-      React.createElement("button", { id: "break-increment", onClick: this.breakIncrement, className: "bg-white font-bold w-8 h-8 rounded-md border border-gray-200 flex justify-center items-center hover:bg-gray-200" }, "+")), /*#__PURE__*/
+      React.createElement("div", { className: "min-h-screen flex justify-center items-center flex-col bg-[#bbbffe]" }, /*#__PURE__*/
+      React.createElement("h1", { className: "mb-8 font-extrabold text-3xl text-center leading-loose" }, /*#__PURE__*/React.createElement("span", { className: "bg-[#7a1a85] inline-block transform -rotate-3 text-white px-4 py-1 leading-8 border-black border-2 shadow-[0.25rem_0.25rem_0rem_0_rgb(0,0,0)]" }, "Neo-Brutalism"), " Clock ", /*#__PURE__*/React.createElement("br", null), " with ", /*#__PURE__*/React.createElement("span", { className: "bg-[#8f58fc] inline-block transform rotate-2 text-white px-4 py-1 leading-8 border-black border-2 shadow-[0.25rem_0.25rem_0rem_0_rgb(0,0,0)]" }, "TailwindCSS")), /*#__PURE__*/
+
+      React.createElement("div", { className: "gap-2 bg-white border-black border-2 shadow-[0.25rem_0.25rem_0rem_0_rgb(0,0,0)] " }, /*#__PURE__*/
+      React.createElement("div", { className: "bg-[#571b57] w-full pt-4 pl-2 pb-2" }, /*#__PURE__*/
+      React.createElement("h1", { className: "text-lg font-bold text-white" }, "Session Timer")), /*#__PURE__*/
 
 
-      React.createElement("h2", { id: "session-label" }, "Session Length"), /*#__PURE__*/
-      React.createElement("p", { id: "session-length", className: "flex justify-center items-center bg-gray-200 h-6 w-full mb-2 rounded-md" }, this.state.sessionLength), /*#__PURE__*/
-      React.createElement("div", { className: "flex" }, /*#__PURE__*/
-      React.createElement("button", { id: "session-decrement", onClick: this.sessionDecrement, className: "bg-white font-bold w-8 h-8 rounded-md border border-gray-200 flex justify-center items-center hover:bg-gray-200" }, "-"), /*#__PURE__*/
-      React.createElement("button", { id: "session-increment", onClick: this.sessionIncrement, className: "bg-white font-bold w-8 h-8 rounded-md border border-gray-200 flex justify-center items-center hover:bg-gray-200" }, "+")), /*#__PURE__*/
+      React.createElement("div", { className: "p-8 grid grid-cols-2 gap-4" }, /*#__PURE__*/
+      React.createElement("div", { className: "w-32" }, /*#__PURE__*/
+      React.createElement("h2", { id: "break-label", className: "text-xs font-bold" }, "Break Length"), /*#__PURE__*/
+      React.createElement("p", { id: "break-length", className: "flex justify-center items-center bg-white h-6 w-full mb-4 border-black border-2 shadow-[0.125rem_0.125rem_0rem_0_rgb(0,0,0)]" }, this.state.breakLength), /*#__PURE__*/
+
+      React.createElement("div", { className: "flex justify-center gap-2" }, /*#__PURE__*/
+      React.createElement("button", { id: "break-decrement", onClick: this.breakDecrement, className: "bg-black" }, /*#__PURE__*/
+      React.createElement("span", { className: "block -translate-x-1 -translate-y-1 border-2 border-black bg-yellow-500 py-1 w-7 hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all text-xs font-bold" }, " - ")), /*#__PURE__*/
 
 
-      React.createElement("p", { id: "timer-label" }, this.state.timerType), /*#__PURE__*/
-      React.createElement("p", { id: "time-left", className: "flex justify-center items-center bg-gray-200 h-6 w-full mb-2 rounded-md" }, this.parseTimer()), /*#__PURE__*/
-      React.createElement("button", { id: "start_stop", onClick: this.toggleTimer, className: "text-xs bg-white py-2 px-4 rounded-md border border-gray-200 flex justify-center items-center hover:bg-gray-200" }, "Start/Stop"), /*#__PURE__*/
-      React.createElement("button", { id: "reset", onClick: this.reset, className: "text-xs bg-white py-2 px-4 rounded-md border border-gray-200 flex justify-center items-center hover:bg-gray-200" }, "Reset")), /*#__PURE__*/
+      React.createElement("button", { id: "break-increment", onClick: this.breakIncrement, className: "bg-black" }, /*#__PURE__*/
+      React.createElement("span", { className: "block -translate-x-1 -translate-y-1 border-2 border-black bg-yellow-500 py-1 w-7 hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all text-xs font-bold" }, " + ")))), /*#__PURE__*/
+
+
+
+
+
+      React.createElement("div", null, /*#__PURE__*/
+      React.createElement("h2", { id: "session-label", className: "text-xs font-bold" }, "Session Length"), /*#__PURE__*/
+      React.createElement("p", { id: "session-length", className: "flex justify-center items-center bg-white h-6 w-full mb-4 border-black border-2 shadow-[0.125rem_0.125rem_0rem_0_rgb(0,0,0)]" }, this.state.sessionLength), /*#__PURE__*/
+
+      React.createElement("div", { className: "flex justify-center gap-2" }, /*#__PURE__*/
+      React.createElement("button", { id: "session-decrement", onClick: this.sessionDecrement, className: "bg-black" }, /*#__PURE__*/
+      React.createElement("span", { className: "block -translate-x-1 -translate-y-1 border-2 border-black bg-yellow-500 py-1 w-7 hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all text-xs font-bold" }, " - ")), /*#__PURE__*/
+
+
+      React.createElement("button", { id: "session-increment", onClick: this.sessionIncrement, className: "bg-black" }, /*#__PURE__*/
+      React.createElement("span", { className: "block -translate-x-1 -translate-y-1 border-2 border-black bg-yellow-500 py-1 w-7 hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all text-xs font-bold" }, " + ")))), /*#__PURE__*/
+
+
+
+
+
+      React.createElement("div", { className: "col-span-2" }, /*#__PURE__*/
+      React.createElement("p", { id: "timer-label", className: "text-xs font-bold" }, this.state.timerType), /*#__PURE__*/
+      React.createElement("p", { id: "time-left", className: "flex justify-center items-center bg-white h-6 w-full mb-4 border-black border-2 shadow-[0.125rem_0.125rem_0rem_0_rgb(0,0,0)]" }, this.parseTimer()), /*#__PURE__*/
+
+      React.createElement("div", { className: "flex justify-center gap-4" }, /*#__PURE__*/
+      React.createElement("button", { id: "start_stop", onClick: this.toggleTimer, className: "bg-black" }, /*#__PURE__*/
+      React.createElement("span", { className: "block -translate-x-1 -translate-y-1 border-2 border-black bg-yellow-500 py-1 px-4 hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all text-xs font-bold" }, " Start/Stop ")), /*#__PURE__*/
+
+
+      React.createElement("button", { id: "reset", onClick: this.reset, className: "bg-black" }, /*#__PURE__*/
+      React.createElement("span", { className: "block -translate-x-1 -translate-y-1 border-2 border-black bg-yellow-500 py-1 px-4 hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all text-xs font-bold" }, " Reset ")))))), /*#__PURE__*/
+
+
+
+
+
+
+
 
       React.createElement("audio", {
         id: "beep",
